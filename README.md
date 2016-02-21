@@ -5,7 +5,7 @@ lives here.
 
 ## Testing Locally
 Since this is just a static website, you can test it locally without running
-a server. Just point you broswer at whereever you have the files, e.g.
+a server. Just point your broswer at whereever you have the files, e.g.
 
 ```
 file:///Users/sinclairtarget/projects/paysymmetry-landing/index.html
