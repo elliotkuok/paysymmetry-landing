@@ -35,3 +35,80 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+//toggle
+$('#toggle1').click(function(){
+    $('#p1').slideToggle()
+});
+
+$('#toggle2').click(function(){
+    $('#p2').slideToggle()
+});
+
+$('#toggle3').click(function(){
+    $('#p3').slideToggle()
+});
+
+$('#toggle4').click(function(){
+    $('#p4').slideToggle()
+});
+
+$('#toggle5').click(function(){
+    $('#p5').slideToggle()
+});
+
+$('#toggle6').click(function(){
+    $('#p6').slideToggle()
+});
+
+$('#toggle7').click(function(){
+    $('#p7').slideToggle()
+});
+
+$('#toggle8').click(function(){
+    $('#p8').slideToggle()
+});
+
+$('#toggle9').click(function(){
+    $('#p9').slideToggle()
+});
+
+$('#toggle10').click(function(){
+    $('#p10').slideToggle()
+});
+
+$('#toggle11').click(function(){
+    $('#p11').slideToggle()
+});
+
+$('#toggle12').click(function(){
+    $('#p12').slideToggle()
+});
+
+$('#toggle13').click(function(){
+    $('#p13').slideToggle()
+});
+
+$('#toggle14').click(function(){
+    $('#p14').slideToggle()
+});
+
+$('#toggle15').click(function(){
+    $('#p15').slideToggle()
+});
+
+$('#toggle16').click(function(){
+    $('#p16').slideToggle()
+});
+
+$('#toggle17').click(function(){
+    $('#p17').slideToggle()
+});
+
+$('#toggle18').click(function(){
+    $('#p18').slideToggle()
+});
+
+$('#toggle19').click(function(){
+    $('#p19').slideToggle()
+});

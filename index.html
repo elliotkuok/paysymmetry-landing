@@ -65,8 +65,8 @@
                     <li class="page-scroll">
                         <a href="#team">Team</a>
                     </li>
-                    <li class="page-scroll btn btn-xs btn-outline">
-                        <a href="http://app.paysymmetry.com/login">Login</a>
+                    <li class="page-scroll" id="sign-in">
+                        <a href="http://app.paysymmetry.com/login">Sign In</a>
                     </li> 
                 </ul>
             </div>
@@ -77,27 +77,17 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Put Video Here</span>
-                        <hr class="star-primary">
-                        <!-- <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span> -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        <img class="img-responsive" src="img/eg.png" alt="">
+
+        
     </header>
 
     <!-- About Section -->
-    <section id="faq">
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
+                    <h3>About</h3>
                 </div>
             </div>
             <div class="row">
@@ -122,7 +112,6 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Facts</h2>
-                    <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
@@ -191,46 +180,120 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="about">
+    <section id="faq">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>FAQ</h2>
-                    <hr class="star-light">
                 </div>
             </div>
-           
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle1" class="astext">Why should I share my salary information?</button>
+                    <p id="p1" style="display: none;">There are tons of great reasons to share your salary with coworkers, but we focus one two big ones: negotiating higher fair wages and recognizing unfair ones.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle2" class="astext">Is it against the law to tell people my salary?</button>
+                    <p id="p2" style="display: none;">The short answer is <u>no</u>, it is not against the law to tell your own salary to anyone else. <br> In fact, there are actually laws in place that protect your right to share your salary information with others. According to the National Labor Relations Act, employees of <a href="https://www.nlrb.gov/rights-we-protect/jurisdictional-standards"> most companies</a> have the right to engage in “concerted activity for mutual aid or protection” and the right to “organize a union to negotiate with [their] employer concerning [their] wages, hours, and other terms and conditions of employment.”  The National Labor Relations Board, which enforces the Act, has repeatedly held that this right to organize includes the right to discuss your pay with coworkers. <br> But the long answer is that <u>you still need to be cautious.</u> <br> Sharing your salary is not against the law, but doing so could violate a contract you signed with your employer, and that in turn is against the law under normal circumstances. If the contract is itself worded illegally (for example if it says “you may not discuss your salary with your coworkers” and the company is subject to the NLRA) then it is unenforceable, but that doesn’t mean your employer won’t try to enforce it. <br>Moreover, the National Labor Relations Act will protect you if you’re only sharing your salary with coworkers, but it doesn’t apply if you are sharing your salary with the general public, or for reasons other than organizing/negotiating. <br>That’s why we try so hard to keep everything anonymous on this site.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle3" class="astext">How much does it cost to create an account?</button>
+                    <p id="p3" style="display: none;">Nothing! Setting up an account is always free, and we won’t ask for your credit card information at any point in the process. If using PaySymmetry was helpful to you though, we hope you’ll pay it forward with an optional contribution. Your contributions allow us to keep helping other workers negotiate for better pay.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle4" class="astext">How do I invite my coworkers?</button>
+                    <p id="p4" style="display: none;">Start by clicking here. You can add you coworkers’ email addresses and we’ll send them an invite. All you need to do is decide whether you want them to know you sent it or not. If you’re worried about retaliation from your boss, we suggest you send the invite anonymously (since a coworker could, in theory, forward the invite email to them). But if you trust your coworkers and think your boss wouldn’t mind if they found out you were discussing salary information, consider adding your real name to the invite email. We won’t link your name to your salary in any way, but it will reassure your coworkers that the invite isn’t spam. </p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle5" class="astext">Who can see my salary once I enter it here?</button>
+                    <p id="p5" style="display: none;">Your salary information will appear next to your job title in the group. Anyone you invite will be able to make an account, but they will only be able to see your salary <u>after</u> they enter their own salary and job title. Be aware: once the people you invite have made accounts and shared their salaries, they will also be able to invite new group members.<br>No one will be able to see your salary until three people have entered salary information. We do this so that the group creator (by default the first person to enter info) can’t be identified as the creator by the second person to join, even if the creator chooses to use their own name in the invite email.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle6" class="astext">Who can see my email address?</button>
+                    <p id="p6" style="display: none;">No one but us. We will use your email address to send you occasional notices, but it will never be associated with your salary data, and members of the group you create or join will not be able to see it.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle7" class="astext">Will coworkers be able to identify me by the information I share here?</button>
+                    <p id="p7" style="display: none;">Once you invite coworkers to your group or join someone else’s group, all that the other group members will be able to see is your job title and your salary. We will never show them this information until at least <u>one other person</u> of your job title have also joined the group. This is so that your salary can’t be easily identified by the person who invited you. (This is also why we say in the email invite how many people have been invited to the group – so that the group creator can’t invite  one target individual and learn their salary.) <br>That said, it’s important to remember that your coworkers know a lot about you, and they may be able to guess which salary is yours using information that they don’t get from PaySymmetry. For example, if you have been working much longer than all the other people with your job title, your salary is probably higher and they may be able to reasonably deduce that the highest salary they see associated with that job title is yours. <br>We think that it’s a risk worth taking. PaySymmetry is about using higher quality information to negotiate your salary, but it’s also about breaking down the mental barriers we all have about discussing pay, and part of that exercise is sometimes accepting less than complete anonymity.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle8" class="astext">Will my boss be able to identify me by the information I share here?</button>
+                    <p id="p8" style="display: none;">Your boss pays you, so odds are they know how much money you make. If you work with a large cohort that all have the similar salaries and the same job title, this may not be a problem. But if salaries vary in your field or there aren’t many people at your company with your job title, they may see your salary next to your job title and be able to figure out that you are the one who posted it. Of course we will never reveal your account information so they won’t be able to conclusively prove that you posted it, but it could still get you into some hot water. Luckily, there is an easy solution… <br><b>Do not invite your boss.</b> Tell your coworkers not to invite your boss. Don’t invite anyone who isn’t your coworker. That way no one will invite your boss.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle9" class="astext">What if a coworker doesn’t want to share their salary?</button>
+                    <p id="p9" style="display: none;">We understand that there are serious social taboos against discussing money in America. Your coworkers might not be ready to share their salaries, even anonymously.  Once you send them an invite email, they will be able to create an account and add data to your group at any time, if they do feel ready. If another group member invites them again, they will get a second email, but after that we won’t bother them again (even if more people try to invite them). <br>Remember that PaySymmetry is just one of many tools you have when organizing your coworkers. If you think this coworker would feel more comfortable talking to you in person about their salary, give that a try!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle10" class="astext">Can I change my salary or job title after I’ve entered it?</button>
+                    <p id="p10" style="display: none;">Yes, you can update your information at any time by going to your group and clicking “Update My Information”.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle11" class="astext">Can I leave a group?</button>
+                    <p id="p11" style="display: none;">Yes, you can leave a group at any time without deleting your account by logging in, going to the group page and clicking “Leave Group”. Leaving a group automatically removes your salary information and job title from that group. Once you leave a group, you will not be able to rejoin unless someone in that group invites you again.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle12" class="astext">Can I delete my account?</button>
+                    <p id="p12" style="display: none;">Yes, you can delete your account by logging in and going to My Account, then clicking “Delete my Account”. This is permanent, and we will never save your salary information once you’ve deleted your account. If you want to rejoin a group after deleting your account, you will need to receive a new invite and create a new account.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle13" class="astext">I forgot my password...</button>
+                    <p id="p13" style="display: none;">That’s ok, just click here. We’ll send you a verification email and you can update it.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle14" class="astext">What should I do if I signed a contract with by boss agreeing not to discuss my salary with coworkers?</button>
+                    <p id="p14" style="display: none;">That’s a great question, but not an easy one to answer. <br>According to recent studies, <a href ="http://www.iwpr.org/publications/pubs/pay-secrecy-and-wage-discrimination"> more than half </a> of the American workforce and over 60% of the private sector work force is forbidden or discourage from discussing their salaries with coworkers, so you may see this type of language in your employment contract, or hear it expressed informally around the office. <br>There are a few things to consider if you’re in this situation: Your boss may simply be unaware of the laws protecting salary sharing, or they might be hoping that you’re unaware of the law, but either way you need to tread lightly. <br>If you have a great relationship with your boss, consider explaining the National Labor Relations Act to them and encouraging them to change the language in their contracts and the culture of secrecy they’re fostering. This might all be as new to them as it is to you. <br> If you have an iffy relationship with your boss, be wary. The bottom line is this: if your employer discovers that you have violated your contract, they may enforce it (fire you) even if doing so is illegal. Filing a claim with the National Labor Relations Board can take significant time and money, and it does not guarantee you’ll get your job back. It makes sense to air on the side of caution and anonymity. <br>You should reach out to a government agency [insert tip-line links] or talk to a lawyer if you think you have been subject to illegal labor practices at work.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle15" class="astext">I’m making significantly less than my coworkers, what should I do?</button>
+                    <p id="p15" style="display: none;">It’s time to negotiate. This is what you’ve been training for! And it’s why you opted to share your salary in the first place. <br>Ask to meet with your boss, tell them you’d like a raise. Use the information you now have about your coworkers’ salaries to suggest a reasonable amount. If your boss says no, tell her you think the figure you suggested is in line with what your coworkers are making. Try not to blow the whole “anonymous” thing (e.g. “Helen told me she makes X” or even “We all decided to share our salary information on this really cool website, I’ll forward you the invite Helen sent me as proof”) but be assertive. Once you’ve double-checked that the NLRA <u>applies to your company</u>, don’t be afraid to let your boss know that you have been exercising your right to organize by discussing salary information.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle16" class="astext">I’m making significantly more than my coworkers, what should I do?</button>
+                    <p id="p16" style="display: none;">This is great news for you. Now you can rest easy knowing that you probably haven’t been the victim of paycheck discrimination, and you don’t have to beat yourself up about not pushing for a larger raise. <br>Even better, you’ve helped your coworkers get the same great deal you’re getting. They will be grateful to you for setting the bar high and giving them ammunition to ask for a raise. They will <b>not</b> (in almost every case) be mad at you. They might be mad at your boss.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle17" class="astext">How do I know what a fair salary is for my job and industry?</button>
+                    <p id="p17" style="display: none;">Good question; figuring out a fair wage for your job might not be as simple as asking your coworkers what they make. For example, you might all be making less than the industry standard and never know it if you’re relying on only the information you share here. <br>We recommend websites like Glassdoor.com and Linkedin.com, which can give you a feel for what other employers are paying people like you.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <button id="toggle18" class="astext">Which laws protect me if I share my salary information with my coworkers?</button>
+                    <p id="p18" style="display: none;">The National Labor Relations Act is piece of federal legislation that protects the employees of <a href ="https://www.nlrb.gov/rights-we-protect/jurisdictional-standards"> most companies </a>. It does not apply to supervisors, or certain other classes of employees. It only protects you if you are sharing your own salary information with coworkers. It will not protect you if you are sharing your salary information with other non-coworkers or for reasons other than labor organizing.</p>
+                </div>
+            </div>
         </div>
     </section>
+            
+               
 
-    <!-- Team Grid Section -->
-    <section class="success" id="facts">
+    <!-- Team Section -->
+    <section class="success" id="team">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Team</h2>
-                    <hr class="star-primary">
                 </div>
-                 <div class="row">
+                <div class="row">
                     <div class="footer-col col-md-4">
                     <h4> Sinclair Target</h4>
                     <h4> Co-founder </h4>
                     <p>
                     Sinclair is our back-end developer and President. He co-founded PaySymmetry while working as a programmer for TwoDots, a mobile game for iOS and Android. Sinclair recently graduated from Columbia University and [fun fact].</p>
-                </div>
-                <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
                     <h4> Julianna McCorkle</h4>
                     <h4> Co-founder </h4>
                     <p>
                     Julianna is our Chief Benefit Officer and content creator. She co-founded PaySymmetry while working as a Paralegal for the law firm of Gunderson Dettmer LLP. specializing in securities law and the corporate governance of start-ups. She grew up in Falmouth, Massachusetts and recently graduated from Barnard College.</p>
-                </div>
-                <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
                     <h4> Liz Kuok</h4>
                     <h4> Co-founder </h4>
                     <p>
                     Liz is our front-end web developer and one-woman Marketing Team. She co-founded PaySymmetry while working on LGBTQ+ wellness issues at Apicha Community Health Center. Liz studied at Smith College and [insert fun fact here].</p>
+                    </div>
                 </div>
-            </div>
             </div>
             
         </div>
@@ -276,7 +339,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2014
+                        Copyright &copy; PaySymmetry 2016
                     </div>
                 </div>
             </div>
@@ -304,7 +367,6 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Project Title</h2>
-                            <hr class="star-primary">
                             <img src="img/facts/cabin.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
@@ -341,7 +403,6 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Project Title</h2>
-                            <hr class="star-primary">
                             <img src="img/facts/cake.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
@@ -378,7 +439,6 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Project Title</h2>
-                            <hr class="star-primary">
                             <img src="img/facts/circus.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
@@ -415,7 +475,6 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Project Title</h2>
-                            <hr class="star-primary">
                             <img src="img/facts/game.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
@@ -452,7 +511,6 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Project Title</h2>
-                            <hr class="star-primary">
                             <img src="img/facts/safe.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
@@ -489,7 +547,6 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Project Title</h2>
-                            <hr class="star-primary">
                             <img src="img/facts/submarine.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
