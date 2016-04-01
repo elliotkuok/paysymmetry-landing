@@ -10,7 +10,8 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 16px;
+    text-align: center;
 }
 
 p.small {
@@ -37,11 +38,14 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #636363;
+    padding-bottom: 15px;
 }
 
 .img-centered {
     margin: 0 auto;
 }
+
+
 
 header {
     text-align: center;
@@ -126,6 +130,11 @@ header .intro-text .skills {
     background-color: transparent;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: #636363;
+    background-color: transparent;
+}
+
 .navbar-nav>li>a {
     padding-top: 19.5px;
     padding-bottom: 19.5px;
@@ -183,7 +192,6 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #25B275;
 }
 
 section.success a,
@@ -215,6 +223,12 @@ section.success a.active {
     position: relative;
     margin: 0 auto;
     max-width: 400px;
+    border-radius: 10px;
+    background: #8e8e8e;
+    padding: 20px; 
+    width: 200px;
+    height: 200px; 
+}
 }
 
 #facts .facts-item .facts-link .caption {
@@ -235,7 +249,7 @@ section.success a.active {
 #facts .facts-item .facts-link .caption .caption-content {
     position: absolute;
     top: 50%;
-    width: 100%;
+    width: 80%;
     height: 20px;
     margin-top: -12px;
     text-align: center;
@@ -265,6 +279,19 @@ section.success a.active {
 #sign-in {
     padding-left: 30px;
 }
+
+
+#wrapper .text {
+position:relative;
+bottom:50px;
+left:0px;
+visibility:hidden;
+}
+
+#wrapper:hover .text {
+visibility:visible;
+}
+
 
 .btn-outline {
     /* margin-top: 15px; */
