@@ -11,6 +11,8 @@ body {
 
 p {
     font-size: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 p.small {
@@ -26,7 +28,6 @@ a.active {
     /*color: #25B275;*/
 }
 
-
 h1,
 h2,
 h3,
@@ -40,6 +41,11 @@ h6 {
     padding-bottom: 15px;
 }
 
+.green-background {
+    background-color: #72996b;
+    color: #fff;
+}
+
 .img-centered {
     margin: 0 auto;
 }
@@ -47,7 +53,7 @@ h6 {
 header {
     text-align: center;
     color: #fff;
-    background: #25B275;
+    background: #72996b;
 }
 
 header .container {
@@ -532,4 +538,24 @@ button {
 
 br {
         line-height: 200%; 
+}
+
+header p {
+    font-size: 20px;
+}
+
+#start-a-group {
+    position: absolute;
+    bottom:20px;
+    color:#FFF;
+}
+
+#start-a-group a {
+    color: #fff;
+}
+
+.facts-cta {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 20px;
 }
