@@ -7,16 +7,17 @@
 body {
     overflow-x: hidden;
     background-color: #f0f7f2;
+    color: #636363;
 }
 
 p {
     font-size: 16px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 p.small {
-    font-size: 16px;
+    font-size: 11px;
 }
 
 a,
@@ -39,11 +40,17 @@ h6 {
     font-weight: 700;
     color: #636363;
     padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px
 }
 
 .green-background {
     background-color: #72996b;
     color: #fff;
+}
+
+.green-background h3 {
+    color:#fff;
 }
 
 .img-centered {
@@ -197,7 +204,7 @@ header .intro-text .skills {
 }
 
 #faq {
-    background-color: #72996b;
+    background-color: #bcbcbc;
 }
 
 #team {
@@ -236,12 +243,12 @@ section.success a.active {
     }
 }
 
-#facts .facts-item {
+#team .team-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#facts .facts-item .facts-link {
+#team .team-item .team-link {
     display: block;
     position: relative;
     margin: 0 auto;
@@ -254,7 +261,7 @@ section.success a.active {
 }
 }
 
-#facts .facts-item .facts-link .caption {
+#team .team-item .team-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -265,11 +272,11 @@ section.success a.active {
     transition: all ease .5s;
 }
 
-#facts .facts-item .facts-link .caption:hover {
+#team .team-item .team-link .caption:hover {
     opacity: 1;
 }
 
-#facts .facts-item .facts-link .caption .caption-content {
+#team .team-item .team-link .caption .caption-content {
     position: absolute;
     top: 50%;
     width: 80%;
@@ -280,21 +287,21 @@ section.success a.active {
     color: #fff;
 }
 
-#facts .facts-item .facts-link .caption .caption-content i {
+#team .team-item .team-link .caption .caption-content i {
     margin-top: -12px;
 }
 
-#facts .facts-item .facts-link .caption .caption-content h3,
-#facts .facts-item .facts-link .caption .caption-content h4 {
+#team .team-item .team-link .caption .caption-content h3,
+#team .team-item .team-link .caption .caption-content h4 {
     margin: 0;
 }
 
-#facts * {
+#team * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #facts .facts-item {
+    #team .team-item {
         margin: 0 0 30px;
     }
 }
@@ -457,7 +464,7 @@ footer .footer-below {
     outline: 0;
 }
 
-.facts-modal .modal-content {
+.team-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -468,20 +475,20 @@ footer .footer-below {
     box-shadow: none;
 }
 
-.facts-modal .modal-content h2 {
+.team-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
 }
 
-.facts-modal .modal-content img {
+.team-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.facts-modal .modal-content .item-details {
+.team-modal .modal-content .item-details {
     margin: 30px 0;
 }
 
-.facts-modal .close-modal {
+.team-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -491,11 +498,11 @@ footer .footer-below {
     cursor: pointer;
 }
 
-.facts-modal .close-modal:hover {
+.team-modal .close-modal:hover {
     opacity: .3;
 }
 
-.facts-modal .close-modal .lr {
+.team-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -506,7 +513,7 @@ footer .footer-below {
     transform: rotate(45deg);
 }
 
-.facts-modal .close-modal .lr .rl {
+.team-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
@@ -516,7 +523,7 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
-.facts-modal .modal-backdrop {
+.team-modal .modal-backdrop {
     display: none;
     opacity: 0;
 }
@@ -555,7 +562,11 @@ header p {
 }
 
 .facts-cta {
-    position: absolute;
-    margin-left: 90px;
+    margin-left: 35px;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.facts h3 {
+    text-transform: none;
 }
