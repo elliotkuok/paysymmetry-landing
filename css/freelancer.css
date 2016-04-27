@@ -256,8 +256,8 @@ section.success a.active {
     border-radius: 10px;
     background: #8e8e8e;
     padding: 20px; 
-    width: 200px;
-    height: 200px; 
+    width: 250px;
+    height: 250px; 
 }
 }
 
@@ -314,8 +314,8 @@ section.success a.active {
 
 #wrapper .text {
 position:relative;
-bottom:55px;
-left:0px;
+top:12px;
+left:5px;
 visibility:hidden;
 }
 
@@ -569,4 +569,18 @@ header p {
 
 .facts h3 {
     text-transform: none;
+}
+
+p.team-box {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 15px;
+}
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
