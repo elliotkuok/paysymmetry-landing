@@ -57,6 +57,11 @@ h6 {
     margin: 0 auto;
 }
 
+.img-circle {
+    border-radius: 50%;
+    height: 100%;
+}
+
 header {
     text-align: center;
     color: #fff;
@@ -253,9 +258,8 @@ section.success a.active {
     position: relative;
     margin: 0 auto;
     max-width: 400px;
-    border-radius: 10px;
     background: #8e8e8e;
-    padding: 20px; 
+    padding: 5px; 
     width: 250px;
     height: 250px; 
 }
@@ -312,10 +316,24 @@ section.success a.active {
     }
 }
 
+#wrapper .boxed {
+position:relative;
+bottom: 130px;
+left:20px;
+visibility:visible;
+background-color: #fff;
+color: #636363;
+padding: 7px;
+}
+
+#wrapper:hover .boxed {
+    visibility: hidden;
+}
+
 #wrapper .text {
 position:relative;
 top:12px;
-left:5px;
+left:20px;
 visibility:hidden;
 }
 
