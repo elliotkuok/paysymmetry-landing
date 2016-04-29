@@ -26,6 +26,7 @@ a:hover,
 a:active,
 a.active {
     outline: 0;
+    text-decoration: none;
     /*color: #25B275;*/
 }
 
@@ -413,6 +414,12 @@ footer .footer-below {
     background-color: #4e4e4e;
 }
 
+.footer-below a {
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .btn-social {
     display: inline-block;
     width: 50px;
@@ -518,16 +525,23 @@ footer .footer-below {
 .astext {
     background:none;
     border:none;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     padding:0;
     text-align: left;
+}
+
+#faq .astext {
     color: #fff;
 }
 
+#faq a:hover {
+    color: #d6833a;
+}
+
 button {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 br {
@@ -573,4 +587,25 @@ p.team-box {
     margin-top: 20px;
     margin-bottom: 0px;
     padding: 0px;
+}
+
+@media (min-width: 1200px) {
+  .col-lg-offset-2 {
+    margin-left: 12%;
+  }
+}
+
+.list-vertical {
+    list-style-type: none;
+}
+
+.faq-link {
+    border-top-style: solid;
+    border-width: 1px;
+    padding: 20px 200px ;
+    color: #fff;
+}
+
+.faq-list {
+    padding-bottom: 35px;
 }
