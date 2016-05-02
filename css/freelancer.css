@@ -94,7 +94,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
+        padding-top: 150px;
         padding-bottom: 100px;
     }
 
@@ -236,7 +236,7 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #3E5363;
+    color: #32425f;
 }
 
 header.success a,
@@ -244,7 +244,7 @@ header.success a:focus,
 header.success a:active,
 header.success a.active {
     outline: 0;
-    color: #3E5363;
+    color: #32425f;
 }
 
 header.success a:hover {
@@ -334,8 +334,11 @@ header.success a:hover {
     border: solid 2px #fff;
     font-size: 15px;
     color: #fff;
-    background: 0 0;
     transition: all .3s ease-in-out;
+}
+
+.btn-outline.black {
+    background: black;
 }
 
 .btn-outline:hover,
@@ -344,7 +347,7 @@ header.success a:hover {
 .btn-outline.active {
     border: solid 2px #fff;
     color: #25B275;
-    background: #fff;
+    background: #D6833A;
 }
 
 .floating-label-form-group {
@@ -513,7 +516,7 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #3E5363;
+    background-color: #32425f;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -523,7 +526,7 @@ footer .footer-below {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #3E5363;
+    background-color: #32425f;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -567,8 +570,12 @@ header p {
 
 #start-a-group {
     position: absolute;
-    bottom:20px;
-    color:#FFF;
+    top: 103%;
+    left: 42%;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    transform: translate(215%, -220%);
 }
 
 #start-a-group a {
@@ -656,4 +663,39 @@ ul.bullet-circle {
 
 .email-link {
     padding-left: 35px;
+}
+
+/* Text over image */
+
+.mid h1 {
+  color: white;
+  margin: auto;
+  position: absolute;
+  font-size: 60px;
+  transform: translate(22%, -445%);
+  white-space: nowrap;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #D6833A;
+  padding: 15px;
+}
+
+.mid p {
+  color: white;
+  margin: auto;
+  font-weight: 800;
+  position: absolute;
+  width: 700px;
+  top: 74%;
+  left: 50%;
+  font-size: 30px;
+  transform: translate(39%, -305%);
+}
+
+#image-parent {
+    position: relative;
+}
+
+#over-text {
+    position: absolute;
 }
