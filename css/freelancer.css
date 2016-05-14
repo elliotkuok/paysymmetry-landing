@@ -151,11 +151,8 @@ header .intro-text .skills {
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-    border-bottom: solid 3px #000000;
-    border-color: #d6833a;
     color: #636363;
-    padding-bottom: 12px;
-    background-color: transparent;
+    background-color: #D6833A;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
@@ -325,7 +322,9 @@ header.success a:hover {
 
 @media(min-width: 982px) {
     #sign-in {
-    padding-left: 30px;
+    border: solid 2px #D6833A;
+    margin-left: 30px;
+    border-radius: 5px;
     }
 }
 
