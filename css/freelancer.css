@@ -54,10 +54,6 @@ h6 {
     color:#fff;
 }
 
-.img-centered {
-    margin: 0 auto;
-}
-
 .img-circle {
     border-radius: 50%;
     height: 225px;
@@ -331,7 +327,7 @@ header.success a:hover {
 .btn-outline {
     /* margin-top: 15px; */
     border: solid 2px #fff;
-    font-size: 15px;
+    font-size: 140%;
     color: #fff;
     transition: all .3s ease-in-out;
 }
@@ -569,12 +565,11 @@ header p {
 
 #start-a-group {
     position: absolute;
-    top: 103%;
-    left: 42%;
+    top: 500px;
+    left: 40%;
     color: #FFF;
     font-size: 30px;
     font-weight: 700;
-    transform: translate(215%, -220%);
 }
 
 #start-a-group a {
@@ -582,13 +577,18 @@ header p {
 }
 
 .facts-cta {
-    margin-left: 35px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .facts h3 {
     text-transform: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.facts p{
+    text-align: center;
 }
 
 p.team-box {
@@ -681,20 +681,14 @@ ul.bullet-circle {
 
 .mid p {
   color: white;
-  margin: auto;
+  margin-left: 23%;
+  margin-top: -28%;
   font-weight: 800;
   position: absolute;
   width: 700px;
-  top: 74%;
-  left: 50%;
   font-size: 30px;
-  transform: translate(39%, -305%);
 }
 
 #image-parent {
     position: relative;
-}
-
-#over-text {
-    position: absolute;
 }
