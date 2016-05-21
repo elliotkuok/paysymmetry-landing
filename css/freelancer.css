@@ -702,3 +702,10 @@ ul.bullet-circle {
 #image-parent {
     position: relative;
 }
+
+/*About Page*/
+.center-justified {
+  text-align: justify;
+  margin: 20px auto;
+  text-align-last: center;
+}
