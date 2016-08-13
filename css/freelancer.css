@@ -704,8 +704,34 @@ ul.bullet-circle {
   font-size: 30px;
 }
 
-#image-parent {
-    position: relative;
+.img-panel {
+    background-image: url("../img/eg.png")
+}
+
+.splash {
+    text-align: center;
+    color: white;
+    padding: 80px 0px;
+}
+
+.splash h1 {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 120px;
+}
+
+.splash p {
+    font-size: 20px;
+    margin: 0px auto 60px;
+    width: 800px;
+}
+
+.splash .btn {
+    margin: 0px auto;
+}
+
+.splash .btn a {
+    color: white;
 }
 
 /*About Page*/
@@ -713,4 +739,8 @@ ul.bullet-circle {
   text-align: justify;
   margin: 20px auto;
   text-align-last: center;
+}
+
+.nav-filler {
+    height: 84px;
 }
