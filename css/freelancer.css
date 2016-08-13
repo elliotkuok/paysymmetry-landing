@@ -593,12 +593,17 @@ header p {
 
 .facts h3 {
     text-transform: none;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
 }
 
-.facts p{
+.facts p {
+    font-size: 24px;
     text-align: center;
+}
+
+.facts p.small {
+    font-size: 16px;
 }
 
 p.team-box {
